@@ -205,7 +205,7 @@ class EbirdAPI
     public function recentObservationsInARegion($regionID, $options=[])
     {
         $url = "/obs/region/recent";
-        $options['r'] = $locationID;
+        $options['r'] = $regionID;
 
         $data = $this->__curlit($url, $options);
 
