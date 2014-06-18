@@ -55,7 +55,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNearByObservations($lat, $lng, $options=[])
+    public function recentNearByObservations($lat, $lng, $options=array())
     {
         $url = "/obs/geo/recent";
         $options['lat'] = $lat;
@@ -82,7 +82,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNearbyObservationsOfASpecies($lat, $lng, $specie, $options=[])
+    public function recentNearbyObservationsOfASpecies($lat, $lng, $specie, $options=array())
     {
         $url = "/obs/geo_spp/recent";
         $options['lat'] = $lat;
@@ -107,7 +107,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsAtHotspot($hotspotID, $options=[])
+    public function recentObservationsAtHotspot($hotspotID, $options=array())
     {
         $url = "/obs/hotspot/recent";
         $options['r'] = $hotspotID;
@@ -131,7 +131,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsOfASpeciesAtHotspots($hotspotID, $specie, $options=[])
+    public function recentObservationsOfASpeciesAtHotspots($hotspotID, $specie, $options=array())
     {
         $url = "/obs/hotspot_spp/recent";
         $options['r']   = $hotspotID;
@@ -154,7 +154,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsAtLocations($locationID, $options=[])
+    public function recentObservationsAtLocations($locationID, $options=array())
     {
         $url = "/obs/loc/recent";
         $options['r'] = $locationID;
@@ -178,7 +178,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsOfASpeciesAtLocations($locationID, $specie, $options=[])
+    public function recentObservationsOfASpeciesAtLocations($locationID, $specie, $options=array())
     {
         $url = "/obs/loc_spp/recent";
         $options['r']   = $locationID;
@@ -202,7 +202,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsInARegion($regionID, $options=[])
+    public function recentObservationsInARegion($regionID, $options=array())
     {
         $url = "/obs/region/recent";
         $options['r'] = $regionID;
@@ -226,7 +226,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentObservationsOfASpeciesInARegion($regionID, $specie, $options=[])
+    public function recentObservationsOfASpeciesInARegion($regionID, $specie, $options=array())
     {
         $url = "/obs/region_spp/recent";
         $options['r']   = $regionID;
@@ -250,7 +250,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNearByNotableObservations($lat, $lng, $options=[])
+    public function recentNearByNotableObservations($lat, $lng, $options=array())
     {
         $url = "/notable/geo/recent";
         $options['lat'] = $lat;
@@ -274,7 +274,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNotableObservationsAtHotspots($hotspotID, $options=[])
+    public function recentNotableObservationsAtHotspots($hotspotID, $options=array())
     {
         $url = "/notable/hotspot/recent";
         $options['r'] = $hotspotID;
@@ -296,7 +296,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNotableObservationsAtLocations($locationID, $options=[])
+    public function recentNotableObservationsAtLocations($locationID, $options=array())
     {
         $url = "/notable/loc/recent";
         $options['r'] = $locationID;
@@ -318,7 +318,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function recentNotableObservationsInARegion($regionID, $options=[])
+    public function recentNotableObservationsInARegion($regionID, $options=array())
     {
         $url = "/notable/region/recent";
         $options['r']   = $regionID;
@@ -342,7 +342,7 @@ class EbirdAPI
      *
      * @return array
      */
-    public function nearestLocationsWithObservationsOfASpecies($lat, $lng, $specie, $options=[])
+    public function nearestLocationsWithObservationsOfASpecies($lat, $lng, $specie, $options=array())
     {
         $url = "/nearest/geo_spp/recent";
         $options['lat'] = $lat;
